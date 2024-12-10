@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>home</title>
+  <style>
+    body {
+      background-image: url(vector-abstract-technology-background-hi-tech-communication-digital-background.jpg);
+      background-color: #f4f4f4;
+      background-position: center;
+      background-size: cover;
+      height: 100vh;
+      font-family: goudy stout;
+    }
+
+    .pasok {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      color: #f4f4f4;
+    }
+    .header .toggle {
+position: absolute;
+top: 30px;
+right: 0;
+    }
+
+
+    .logo {
+      display: block;
+      color: rgb(3, 3, 5);
+      float: center;
+      backdrop-filter: blur(15px);
+      border-radius: 50%;
+      border: 1px solid black;
+    }
+    .navi{
+      backdrop-filter: blur(10px);
+    }
+
+    .navi a {
+      float: right;
+      display: block;
+      color: rgb(0, 0, 0);
+      text-align: left;
+      padding: 8px;
+      text-decoration: none;
+    }
+
+    .navi a:hover {
+      background-color: rgb(147, 198, 181);
+      color: black;
+    }
+
+    .intro-container {
+      width: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin: 0 10%;
+    }
+
+    .intro {
+      width: 600px;
+      display: block;
+    }
+
+    .outerbox {
+      width: 400px;
+      overflow: hidden;
+      margin: auto;
+    }
+
+    .sliderbox {
+      position: relative;
+      width: calc(10 * 400px);
+      animation-name: slider;
+      animation-duration: 30s;
+      animation-iteration-count: infinite;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+    }
+
+    .sliderbox img {
+      float: left;
+      overflow: hidden;
+      width: 500px;
+      object-fit: cover;
+    }
+
+    @keyframes slider {
+      0% {
+        left: calc(0 * -400px);
+      }
+
+      9% {
+        left: calc(0 * -400px);
+      }
+
+      10% {
+        left: calc(1 * -400px);
+      }
+
+      19% {
+        left: calc(1 * -400px);
+      }
+
+      20% {
+        left: calc(2 * -400px);
+      }
+
+      29% {
+        left: calc(2 * -400px);
+      }
+
+      30% {
+        left: calc(3 * -400px);
+      }
+
+      39% {
+        left: calc(3 * -400px);
+      }
+
+      40% {
+        left: calc(4 * -400px);
+      }
+
+      49% {
+        left: calc(4 * -400px);
+      }
+
+      50% {
+        left: calc(5 * -400px);
+      }
+
+      59% {
+        left: calc(5 * -400px);
+      }
+
+      60% {
+        left: calc(6 * -400px);
+      }
+
+      69% {
+        left: calc(6 * -400px);
+      }
+
+      70% {
+        left: calc(7 * -400px);
+      }
+
+      79% {
+        left: calc(7 * -400px);
+      }
+
+      80% {
+        left: calc(8 * -400px);
+      }
+
+      89% {
+        left: calc(8 * -400px);
+      }
+
+      90% {
+        left: calc(9 * -400px);
+      }
+
+      99% {
+        left: calc(9 * -400px);
+      }
+
+      100% {
+        left: calc(10 * -400px);
+      }
+    }
+
+    footer {
+      text-align: center;
+      padding: 2px;
+      backdrop-filter: blur(20px);
+      color: white;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+      margin-bottom: 0px;
+    }
+
+
+
+
+    .open-modal {
+      padding: 10px 15px;
+      background: #007BFF;
+      color: white;
+      text-align: center;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      float: right;
+      text-decoration: none;
+
+    }
+
+    .open-modal-hover {
+      background-color: #0056b3;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.4);
+
+    }
+
+    .modal-toggle {
+      display: none;
+
+
+    }
+
+    .modal-toggle:checked+.modal {
+      display: block;
+    }
+
+    .modal-content {
+      background-color: #fefefe;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 300px;
+      border-radius: 5px;
+      position: relative;
+      font-family: Arial, Helvetica, sans-serif;
+      color: black;
+    }
+
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .close:hover {
+      color: black;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin: 10px 0 5px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button[type="submit"] {
+      background-color: #28a745;
+      border: none;
+      padding: 10px;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #218838;
+    }
+
+
+    button[type="register"]:hover {
+      background-color: pink;
+    }
+
+
+    .open-modaln {
+      padding: 10px 15px;
+
+      color: rgb(0, 0, 0);
+      text-align: right;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      display: inline-block;
+      text-decoration: none;
+
+
+    }
+
+    .open-modaln-hover {
+      background-color: #0056b3;
+    }
+
+    .modaln {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .modal-togglen {
+      display: none;
+      font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+    .modal-togglen:checked+.modaln {
+      display: block;
+    }
+
+    .modal-contentn {
+      background-color: #fefefe;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 300px;
+      border-radius: 5px;
+      position: relative;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .close:hover {
+      color: black;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin: 10px 0 5px;
+    }
+
+    input[type="date"],
+    input[type="text"],
+    input[type="password"] {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button[type="submitn"] {
+      background-color: #28a745;
+      border: none;
+      padding: 10px;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button[type="submitn"]:hover {
+      background-color: #218838;
+    }
+
+    button[type="registern"] {
+      background-color: #fefefe;
+      border: none;
+      padding: 10px;
+      color: rgb(0, 0, 0);
+      border-radius: 5px;
+      cursor: pointer;
+      align-content: right;
+      text-decoration: none;
+      margin-left: 250px;
+    }
+
+    .greet {
+      backdrop-filter: blur(20px);
+      width: 90%;
+      height: 15%;
+      padding: 30px;
+      border-radius: 30px;
+      border-radius: 50px;
+      align-content: center;
+      align-self: center;
+      margin-left: 50px;
+      margin-top: 10px;
+      font-family: Times, serif;
+      border: solid black 1px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="pasok">
+    <div class="header">
+      <label for="modal-toggle" class="open-modal toggle" >Login</label>
+      <input type="checkbox" id="modal-toggle" class="modal-toggle">
+      <div class="modal">
+        <div class="modal-content">
+          <label for="modal-toggle" class="close">&times;</label>
+          <h2>Login</h2>
+          <form>
+            <input type="text" id="username" name="username" required>
+            <center> <label for="username">Username:</label></center><br>
+
+            <input type="password" id="password" name="password" required>
+            <center> <label for="password">Password:</label></center><br>
+
+            <center><button type="submitn">Login</button></center>
+
+            <label for="modal-togglen" class="open-modaln ">register here!</label>
+            <input type="checkbox" id="modal-togglen" class="modal-togglen">
+            <div class="modaln">
+              <div class="modal-contentn">
+                <label for="modal-togglen" class="close">&times;</label>
+                <h2>Registration</h2>
+                <form>
+                  <label for="username">Email Adress:</label>
+                  <input type="text" name="username" required>
+
+                  <label for="password">Name:</label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                  <input type="text" name="name" required>
+
+                  <label for="password">Lastname:</label> &nbsp; &nbsp; &nbsp;
+                  <input type="text" name="name" required>
+                  <label for="username">Birthdate:</label> &nbsp;&nbsp; &nbsp; &nbsp;
+                  <input type="date" name="Birthdate" required>
+                  <br>
+                  <label for="password">Username:</label>&nbsp; &nbsp; &nbsp;
+                  <input type="text" name="Username" required>
+
+                  <label for="password">Password:</label>&nbsp;&nbsp;&nbsp; &nbsp;
+                  <input type="password" name="password" required>
+                  <center><button type="submitn">Save</button></center>
+                  <button type="registern">Login</button>
+
+                </form>
+              </div>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+    <center><img src="Great-TV-logo-vector-removebg-preview.png" height="200" width="200" class="logo"></center>
+
+    <div class="navi">
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="last.html">Products</a>
+      <a href="">Home</a>
+    </div>
+  </div>
+  <div class="intro-container">
+    <div class="intro">
+      <h1>Looking for a great deal on a new TV?</h1>
+      <p> Great TV is your destination for competitive prices, top-notch
+        brands, and exceptional customer.
+      </p>
+    </div>
+    <div class="outerbox">
+      <div class="sliderbox">
+        <img src="1-removebg-preview-removebg-preview.png">
+        <img src="06_LED-32S5400AF_02-removebg-preview-removebg-preview.png">
+        <img src="81pieXC63IL-removebg-preview-removebg-preview.png">
+        <img src="1699-removebg-preview-removebg-preview.png">
+        <img src="rb/Untitled_Project-removebg-preview.png">
+        <img src="rb/Untitled_Project2-removebg-preview.png">
+        <img src="rb/Untitled_Project5-removebg-preview.png">
+        <img src="rb/Untitled_Project13-removebg-preview.png">
+        <img src="rb/Untitled_Project5-removebg-preview.png">
+        <img src="rb/Untitled_Project11-removebg-preview.png">
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Marketplace. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>

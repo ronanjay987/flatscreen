@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body{
+        
+        background-image: url(vector-abstract-technology-background-hi-tech-communication-digital-background.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        font-family: goudy stout;
+       
+    }
+    .pasok {
+            display: flex;
+            flex-direction: column;
+            color: #daaeae;
+        }
+        .header img{
+            backdrop-filter:blur(3px);
+        }
+        .navi {
+            text-align: left;
+            display: block;
+            color: rgb(3, 3, 5);
+            float: right;
+            backdrop-filter:blur(20px);
+
+        }
+        .navi a {
+            float: right;
+            display: block;
+            color: rgb(126, 131, 206);
+            text-align: left;
+            padding: 8px;
+            text-decoration: none;
+        }
+        .navi a:hover {
+            background-color: rgb(147, 198, 181);
+            color: black;
+        }
+        
+        .gallery {
+            perspective: 1000px;
+            align-items: center;
+            align-content: center;
+            
+        }
+
+        .gallery-container {
+            width: 300px;
+            height: 300px;
+            transform-style: preserve-3d;
+            animation: rotate 15s infinite linear;
+        }
+
+        .gallery-image {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+        }
+
+        .gallery-image img {
+            width: 100%;
+            height: 100%;
+            box-shadow: 2px;
+           
+        }
+
+        .gallery-image:nth-child(1) {
+            transform: rotateY(0deg);
+        }
+
+        .gallery-image:nth-child(2) {
+            transform: rotateY(90deg);
+        }
+
+        .gallery-image:nth-child(3) {
+            transform: rotateY(180deg);
+        }
+
+        .gallery-image:nth-child(4) {
+            transform: rotateY(-90deg);
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotateY(0deg);
+            }
+
+            100% {
+                transform: rotateY(360deg);
+            }
+        }
+
+        .thumbnail-gallery {
+            display: flex;
+            margin-top: 100px;
+            gap: 50px;
+            flex-wrap: wrap;
+            justify-content: center;
+           
+        }
+
+        .thumbnail {
+            border-radius: 8px;
+            transition: transform 0.3s;
+            width: 120px;
+            height: 95px;
+           margin-left: 30px;
+            justify-content: center;
+        }
+
+        .thumbnail img {
+            width: 160px;
+            height: auto;
+            display: block;
+            
+        }
+
+        .thumbnail :hover {
+            transform: scale(1.3);
+            transition: 0.5s;
+            transition: ease-in-out;
+        }
+
+        .Description {
+           
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            text-align: center;
+            font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+            font-size: 15px;
+            padding: 1px;
+            opacity: 0;
+            transition: opacity 0.3s;
+            margin-left: 40px;
+           
+        }
+
+        .thumbnail:hover .Description {
+            opacity: 1;
+            align-items: center;
+            
+        }
+      
+</style>
+</head>
+<body>
+    <div class="pasok">
+       
+        <div class="navi">
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="">Product</a>
+            <a href="index.html">Home</a>
+        </div>
+    </div>
+    <div class="gallery"><center>
+        <div class="gallery-container">
+            <div class="gallery-image"><img src="rb/Untitled_Project6-removebg-preview.png" alt="image 1"></div>
+            <div class="gallery-image"><img src="rb/Untitled_Project2-removebg-preview.png" alt="image 2"></div>
+            <div class="gallery-image"><img src="rb/Untitled_Project17-removebg-preview.png" alt="image 3"></div>
+            <div class="gallery-image"><img src="rb/Untitled_Project13-removebg-preview.png" alt="image 4"></div>
+        </div></center>
+    </div>
+    <div class="thumbnail-gallery">
+
+        <div class="thumbnail"><a href="TV1.HTML"><img src="rb/11-removebg-preview.png" alt="Thumbnail 1"></a>
+            <div class="Description">TCL</div>
+        </div>
+        <div class="thumbnail"><a href="tv2.HTML"><img src="rb/Untitled_Project-removebg-preview.png" alt="Thumbnail 2"></a>
+            <div class="Description">SHARP 2t</div>
+        </div>
+        <div class="thumbnail"><a href="tv3.HTML"><img src="rb/Untitled_Project20-removebg-preview.png" alt="Thumbnail 3"></a>
+            <div class="Description">GELL smart TV</div>
+        </div>
+        <div class="thumbnail"><a href="tv4.HTML"><img src="rb/Untitled_Project15-removebg-preview.png" alt="Thumbnail 4"></a>
+            <div class="Description">COBY Slim</div>
+        </div>
+        <div class="thumbnail"><a href="tv5.HTML"><img src="rb/Untitled_Project2-removebg-preview.png" alt="Thumbnail 5"></a>
+            <div class="Description">Xiaomi Smart tv</div>
+        </div>
+        <div class="thumbnail"><a href="tv6.HTML"><img src="rb/Untitled_Project5-removebg-preview.png" alt="Thumbnail 6"></a>
+            <div class="Description">HISENSE</div>
+        </div>
+    </div>
+    <div class="thumbnail-gallery">
+        <div class="thumbnail"><a href="tv7.HTML"><img src="rb/Untitled_Project8-removebg-preview.png" alt="Thumbnail 1"></a>
+            <div class="Description">Alba mega sonic</div>
+        </div>
+        <div class="thumbnail"><a href="tv8.HTML"><img src="rb/Untitled_Project11-removebg-preview.png" alt="Thumbnail 2"></a>
+            <div class="Description">SAMSUNG OLED</div>
+        </div>
+        <div class="thumbnail"><a href="tv9.HTML"><img src="rb/Untitled_Project15-removebg-preview.png" alt="Thumbnail 3"></a>
+            <div class="Description">HISENSE U8n</div>
+        </div>
+        <div class="thumbnail"><a href="tv10.HTML"><img src="rb/Untitled_Project19-removebg-preview.png" alt="Thumbnail 4"></a>
+            <div class="Description">Acer XR A95L</div>
+        </div>
+        <div class="thumbnail"><a href="tv11.HTML"><img src="rb/Untitled_Project13-removebg-preview.png" alt="Thumbnail 5"></a>
+            <div class="Description">Xiaomi L50m8</div>
+        </div>
+        <div class="thumbnail"><a href="tv12.HTML"><img src="rb/Untitled_Project20-removebg-preview.png" alt="Thumbnail 6"></a></a>
+            <div class="Description">Sony  TH43</div>
+        </div>
+    </div>
+    <div class="thumbnail-gallery">
+        <div class="thumbnail"><a href="tv13.HTML"><img src="rb/1-removebg-preview.png" alt="Thumbnail 1"></a>
+            <div class="Description">Panasonic</div>
+        </div>
+        <div class="thumbnail"><a href="tv14.HTML"><img src="rb/06_LED-32S5400AF_02-removebg-preview.png" alt="Thumbnail 2"></a>
+            <div class="Description">TCL mt3</div>
+        </div>
+        <div class="thumbnail"><a href="tv15.HTML"><img src="rb/81pieXC63IL-removebg-preview.png" alt="Thumbnail 3"></a>
+            <div class="Description">Acer</div>
+        </div>
+        <div class="thumbnail"><a href="tv16.HTML"><img src="rb/1699-removebg-preview.png" alt="Thumbnail 4"></a>
+            <div class="Description">PHILIP OLED43</div>
+        </div>
+       
+        <div class="thumbnail"><a href="tv17.HTML"><img src="rb/Picsart_24-10-15_09-48-47-928-removebg-preview.png" alt="Thumbnail 6"></a>
+            <div class="Description">XIAOmi Tv A pro 43</div>
+
+        </div> <div class="thumbnail"><a href="tv18.HTML"><img src="rb/LD0006154000_0006154017-removebg-preview.png" alt="Thumbnail 5"></a>
+            <div class="Description">PHILIP OLED 32</div>
+        </div>
+    </div>
+    <div class="thumbnail-gallery">
+        <div class="thumbnail"><a href="tv19.HTML"><img src="rb/medium01-removebg-preview.png" alt="Thumbnail 1"></a>
+            <div class="Description">LG</div>
+        </div>
+        <div class="thumbnail"><a href="tv20.HTML"><img src="rb/TH-50MX650X_1-removebg-preview.png" alt="Thumbnail 2"></a>
+            <div class="Description">Xiaomi Smart TV A 2015</div>
+        </div>
+        <div class="thumbnail"><a href="tv21.HTML"><img src="rb/samsung-ua32t4360akxxl-hd-led-tv-250x250-removebg-preview.png" alt="Thumbnail 3"></a>
+            <div class="Description">SAMSUNG 55ing 4k</div>
+        </div>
+        <div class="thumbnail"><a href="tv22.HTML"><img src="rb/11-removebg-preview.png" alt="Thumbnail 4"></a>
+            <div class="Description">Xiaomi 55 "anriod tv"</div>
+        </div>
+        <div class="thumbnail"><a href="tv23.HTML"><img src="rb/R-removebg-preview.png" alt="Thumbnail 5" height="50px"></a>
+            <div class="Description">Samsung RU7100</div>
+        </div>
+        <div class="thumbnail"><a href="tv24.HTML"><img src="rb/Untitled_Project6-removebg-preview.png" alt="Thumbnail 6"></a>
+            <div class="Description">SMART tv </div>
+        </div>
+    </div>
+    <div class="thumbnail-gallery">
+        <div class="thumbnail"><a href="tv25.HTML"><img src="rb/Untitled_Project17-removebg-preview.png" alt="Thumbnail 1"></a>
+            <div class="Description">Aiwa 32 inch</div>
+        </div>
+        <div class="thumbnail"><a href="tv26.HTML"><img src="rb/images__8_-removebg-preview.png" alt="Thumbnail 2"></a>
+            <div class="Description">ACER</div>
+        </div>
+        <div class="thumbnail"><a href="tv27.HTML"><img src="rb/images__4_-removebg-preview.png" alt="Thumbnail 3"></a>
+            <div class="Description">PREDATOR 27</div>
+        </div>
+        <div class="thumbnail"><a href="tv28.HTML"><img src="rb/images__3_-removebg-preview.png" alt="Thumbnail 4"></a>
+            <div class="Description">Predator 27 2020</div>
+        </div>
+        <div class="thumbnail"><a href="tv29.HTML"><img src="rb/images__1_-removebg-preview.png" alt="Thumbnail 5"></a>
+            <div class="Description">Acer predator 2017</div>
+        </div>
+        <div class="thumbnail"><a href="tv30.HTML"><img src="rb/51FckJewnjL-removebg-preview.png" alt="Thumbnail 6"></a>
+            <div class="Description">Acer Smart tv </div>
+        </div>
+    </div>
+   
+
+</body>
+</html>

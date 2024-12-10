@@ -1,0 +1,223 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Untitled Document</title>
+
+	<style>
+		body {
+
+			background-image: url(vector-abstract-technology-background-hi-tech-communication-digital-background.jpg);
+			background-position: center;
+			background-size: cover;
+			height: 100vh;
+
+
+		}
+
+		.container {
+			display: flex;
+			justify-content: center;
+			width: 35em;
+			backdrop-filter: blur(15px);
+			box-shadow: 5px 5px 15px rgb(60, 71, 173);
+			border-radius: 10px;
+			padding: 20px;
+			max-width: 600px;
+			margin: auto;
+			margin-top: 50px;
+		}
+
+		p {
+			font-size: 0.6em;
+			color: rgba(190, 147, 147, 1.00);
+			letter-spacing: 1px;
+		}
+
+		.images {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			margin: auto;
+		}
+
+		.imahe {
+			width: 100%;
+			height: 100%;
+			border-radius: 5px;
+			margin-right: 20px;
+		}
+
+		.slideshow-buttons {
+			display: flex;
+			justify-content: center;
+			gap: 20px;
+		}
+
+		.slideshow-buttons span {
+			width: 7px;
+			height: 7px;
+			border-radius: 50%;
+			background: rgba(241, 241, 241, 1.00);
+		}
+
+		.pick {
+			text-transform: uppercase;
+			font-size: 10px;
+			text-align: center;
+		}
+
+		.sizes {
+			display: flex;
+			justify-content: flex-start;
+			column-gap: 10px;
+			flex-wrap: wrap;
+			font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+			justify-content: center;
+		}
+
+		.size {
+			border: none;
+			width: 24px;
+			height: 24px;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: center;
+			padding: 2px;
+			font-size: 15px;
+			transition: 0.3s ease-in-out, transform 0.3s ease-in-out;
+		}
+
+		.size:hover {
+			background: red;
+			color: white;
+			transform: scale(1.1)
+		}
+
+		.product {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			margin-right: 20px;
+		}
+
+		#p {
+			text-transform: uppercase;
+		}
+
+		.par2 {
+			font-size: 20px;
+			font-weight: bold;
+		}
+
+		.description {
+			text-transform: none;
+
+			margin-bottom: 17px;
+			color: rgba(20, 16, 16, 1.00);
+			font-size: 0.7em;
+			line-height: 1.6em;
+			text-align: justify;
+			font: bolder;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		.buttons {
+			padding: 1px;
+			display: flex;
+			outline: 0;
+			border: 0;
+			border-radius: 2px;
+			letter-spacing: 1px;
+			color: white;
+			cursor: pointer;
+		}
+
+		.buttons:hover {
+			transition: all 0.4s ease-in-out;
+		}
+
+		.add {
+			width: 150px;
+			font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+			text-transform: uppercase;
+		}
+
+		.back {
+			width: 50px;
+			font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+			text-transform: uppercase;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="images">
+			<img alt="" src="rb/images__4_-removebg-preview.png" class="imahe">
+			<div class="slideshow-buttons">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+
+			<p class="pick">Choose screen size/inches</p>
+
+			<div class="sizes">
+				<span class="size">22</span>
+				<span class="size">28.1</span>
+				<span class="size">32.1</span>
+				<span class="size">43.6</span>
+				<span class="size">50.4</span>
+			</div>
+		</div>
+		<div class="product">
+			<p class="par2">Acer</p>
+			<h3> XV282KKV</h3>
+			<h3>Php35,990.00</h3>
+			<p class="description">Excellent working condition, ready for years of enjoyment.
+			</p>
+			<label for="modal-toggle" class="open-modal ">SPECS</label>
+			<input type="checkbox" id="modal-toggle" class="modal-toggle">
+			<div class="modal">
+				<div class="modal-content">
+					<label for="modal-toggle" class="close">&times;</label>
+					<h2>SPECS</h2>
+
+					<form>
+						<h2> Screen Size and Resolution</h2>
+						<p>Screen size, measured diagonally in inches, dictates the TV's physical size. Consider your
+							room size and viewing distance when choosing a screen size. <br> <br>
+							Resolution, referring to the number of pixels on the screen, directly impacts image clarity
+							and sharpness. Common resolutions include Full HD (1080p), 4K (2160p), and 8K (4320p), with
+							higher resolutions offering greater detail. </p>
+						<h2>Display Technology</h2>
+						<p> LED (Light-Emitting Diode): A popular technology that uses LEDs to illuminate the backlight.
+							LED TVs offer good picture quality, energy efficiency, and affordability.<br> <br>
+							QLED (Quantum Dot LED): An advanced LED technology using quantum dots to enhance color
+							accuracy and brightness. QLED TVs deliver wider color gamuts and better HDR performance than
+							standard LED TVs. <br> <br>
+							OLED (Organic Light-Emitting Diode): Uses organic materials that emit their own light,
+							resulting in perfect blacks, infinite contrast ratios, and wider viewing angles. OLED TVs
+							offer exceptional picture quality but are typically more expensive. </p>
+						<h2>Contrast Ratio and HDR</h2>
+						<p>Contrast Ratio: Measures the difference between the brightest and darkest parts of an image.
+							A higher contrast ratio indicates better detail in both dark and bright areas, resulting in
+							a more realistic picture.<br> <br>
+							HDR (High Dynamic Range): A technology that expands the range of colors and brightness
+							levels a TV can display, creating more realistic and vibrant images. HDR TVs offer a wider
+							dynamic range, with more detail in highlights and shadows.</p>
+					</form>
+				</div>
+			</div>
+			<div class="buttons">
+				<button class="add">Add to Cart</button>
+				<a href="last.html"><button class="back">Back</button></a>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
